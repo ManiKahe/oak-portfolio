@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAK — Mani Kahe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <div class="nav-logo">OAK</div>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link" data-section="hero">OAK</a></li>
+        <li><a href="#work" class="nav-link" data-section="work">WORK</a></li>
+        <li><a href="#music" class="nav-link" data-section="music">MUSIC</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">ABOUT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-title-container">
+        <h1 class="hero-brand">OAK</h1>
+      </div>
+      
+      <div class="hero-subtitle">
+        <p class="hero-name">Mani Kahe (Malekrad)</p>
+        <p class="hero-role">ENGINEER / DESIGNER / MUSICIAN</p>
+      </div>
+
+      <div class="hero-year">2026</div>
+
+      <!-- Animated geometric background -->
+      <svg class="hero-svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <filter id="blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+          </filter>
+        </defs>
+        
+        <!-- Animated circles -->
+        <circle class="geo-circle geo-circle-1" cx="100" cy="150" r="80" />
+        <circle class="geo-circle geo-circle-2" cx="1100" cy="650" r="120" />
+        <circle class="geo-circle geo-circle-3" cx="300" cy="700" r="60" />
+        
+        <!-- Grid lines -->
+        <g class="geo-grid" opacity="0.15">
+          <line x1="0" y1="200" x2="1200" y2="200" />
+          <line x1="0" y1="400" x2="1200" y2="400" />
+          <line x1="0" y1="600" x2="1200" y2="600" />
+          <line x1="300" y1="0" x2="300" y2="800" />
+          <line x1="600" y1="0" x2="600" y2="800" />
+          <line x1="900" y1="0" x2="900" y2="800" />
+        </g>
+
+        <!-- Orbital system -->
+        <g class="orbital-system" transform="translate(600, 400)">
+          <circle class="orbit" r="150" />
+          <circle class="orbit" r="250" />
+          <circle class="orbit" r="350" />
+          
+          <g class="orbiting-dot orbiting-dot-1">
+            <circle cx="150" cy="0" r="6" />
+          </g>
+          <g class="orbiting-dot orbiting-dot-2">
+            <circle cx="250" cy="0" r="5" />
+          </g>
+          <g class="orbiting-dot orbiting-dot-3">
+            <circle cx="350" cy="0" r="4" />
+          </g>
+        </g>
+
+        <!-- Crosshairs center -->
+        <g class="crosshair" opacity="0.25">
+          <line x1="600" y1="350" x2="600" y2="450" stroke-width="1" />
+          <line x1="550" y1="400" x2="650" y2="400" stroke-width="1" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>SCROLL TO EXPLORE</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="section work" id="work">
+    <div class="section-header">
+      <h2>Things I build.</h2>
+    </div>
+
+    <div class="lab-container">
+      <!-- Project 01 -->
+      <div class="lab-project project-01" data-project="01">
+        <div class="project-header">
+          <h3>N7 Gallery</h3>
+          <p class="project-meta">Android / Interface / 2026</p>
+        </div>
+
+        <div class="project-visual n7-visual">
+          <svg class="n7-svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <radialGradient id="n7-grad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#B3EFB2;stop-opacity:0.3" />
+                <stop offset="100%" style="stop-color:#2D5016;stop-opacity:0.1" />
+              </radialGradient>
+            </defs>
+
+            <!-- Background circles -->
+            <circle class="n7-circle n7-circle-1" cx="300" cy="300" r="250" />
+            <circle class="n7-circle n7-circle-2" cx="300" cy="300" r="180" />
+            <circle class="n7-circle n7-circle-3" cx="300" cy="300" r="100" />
+
+            <!-- Grid -->
+            <g class="n7-grid" opacity="0.2">
+              <line x1="150" y1="150" x2="450" y2="150" />
+              <line x1="150" y1="300" x2="450" y2="300" />
+              <line x1="150" y1="450" x2="450" y2="450" />
+              <line x1="150" y1="150" x2="150" y2="450" />
+              <line x1="300" y1="150" x2="300" y2="450" />
+              <line x1="450" y1="150" x2="450" y2="450" />
+            </g>
+
+            <!-- Crosshair -->
+            <g class="n7-crosshair" opacity="0.4">
+              <line x1="300" y1="250" x2="300" y2="350" stroke-width="2" />
+              <line x1="250" y1="300" x2="350" y2="300" stroke-width="2" />
+            </g>
+
+            <!-- Center element -->
+            <text class="n7-text" x="300" y="315" text-anchor="middle" font-size="48" font-weight="700" opacity="0.6">N7</text>
+
+            <!-- Rotating dots -->
+            <g class="n7-dots">
+              <circle class="n7-dot n7-dot-1" cx="300" cy="150" r="5" />
+              <circle class="n7-dot n7-dot-2" cx="450" cy="300" r="5" />
+              <circle class="n7-dot n7-dot-3" cx="300" cy="450" r="5" />
+              <circle class="n7-dot n7-dot-4" cx="150" cy="300" r="5" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Project 02 -->
+      <div class="lab-project project-02" data-project="02">
+        <div class="project-header">
+          <h3>Experiment 02</h3>
+          <p class="project-meta">Software / 2026</p>
+        </div>
+
+        <div class="project-visual exp02-visual">
+          <svg class="exp02-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+            <!-- Floating interface elements -->
+            <g class="floating-elements">
+              <rect class="float-rect float-rect-1" x="50" y="50" width="120" height="80" rx="4" />
+              <rect class="float-rect float-rect-2" x="430" y="80" width="100" height="100" rx="4" />
+              <rect class="float-rect float-rect-3" x="80" y="280" width="140" height="70" rx="4" />
+              <rect class="float-rect float-rect-4" x="400" y="250" width="130" height="90" rx="4" />
+            </g>
+
+            <!-- Grid lines -->
+            <g class="exp02-grid" opacity="0.15">
+              <line x1="0" y1="100" x2="600" y2="100" />
+              <line x1="0" y1="200" x2="600" y2="200" />
+              <line x1="0" y1="300" x2="600" y2="300" />
+              <line x1="150" y1="0" x2="150" y2="400" />
+              <line x1="300" y1="0" x2="300" y2="400" />
+              <line x1="450" y1="0" x2="450" y2="400" />
+            </g>
+
+            <!-- Connecting lines -->
+            <g class="exp02-connections" opacity="0.2">
+              <line class="connection-line" x1="110" y1="130" x2="480" y2="130" />
+              <line class="connection-line" x1="150" y1="350" x2="465" y2="295" />
+            </g>
+
+            <!-- Dots -->
+            <g class="exp02-dots">
+              <circle class="exp02-dot" cx="110" cy="90" r="4" />
+              <circle class="exp02-dot" cx="480" cy="130" r="4" />
+              <circle class="exp02-dot" cx="150" cy="350" r="4" />
+              <circle class="exp02-dot" cx="465" cy="295" r="4" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Music Section -->
+  <section class="section music" id="music">
+    <div class="section-header">
+      <h2>Sound studies.</h2>
+    </div>
+
+    <div class="music-project">
+      <div class="music-header">
+        <h3>Ballade No. 1</h3>
+        <p>Frédéric Chopin — Synthesizer Arrangement</p>
+        <p class="music-year">2026</p>
+      </div>
+
+      <div class="music-player">
+        <div class="waveform-container">
+          <svg class="waveform-svg" viewBox="0 0 1000 200" preserveAspectRatio="none">
+            <g class="waveform-group">
+              <!-- Animated waveform -->
+              <polyline class="waveform-line" points="0,100 20,95 40,85 60,75 80,85 100,90 120,85 140,70 160,60 180,70 200,85 220,90 240,95 260,100 280,105 300,115 320,125 340,130 360,125 380,115 400,105 420,100 440,95 460,90 480,95 500,105 520,120 540,135 560,140 580,135 600,120 620,105 640,95 660,90 680,95 700,105 720,115 740,120 760,115 780,105 800,100 820,95 840,90 860,95 880,105 900,115 920,120 940,115 960,105 980,100 1000,100" />
+            </g>
+            
+            <!-- Playhead -->
+            <line class="playhead" x1="0" y1="50" x2="0" y2="150" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="player-controls">
+          <button class="play-btn" id="playBtn">
+            <span class="play-icon">▶</span>
+            <span class="pause-icon" style="display:none;">⏸</span>
+          </button>
+          <div class="timeline">
+            <span class="time-current">0:00</span>
+            <span class="time-duration">4:23</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="about-content">
+      <div class="about-roles">
+        <div class="role-item" data-role="engineer">
+          <h3>ENGINEER</h3>
+        </div>
+        <div class="role-item" data-role="designer">
+          <h3>DESIGNER</h3>
+        </div>
+        <div class="role-item" data-role="musician">
+          <h3>MUSICIAN</h3>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p>Building things between software, sound and visual systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">OAK</div>
+      <div class="footer-name">Mani Kahe (Malekrad)</div>
+      <div class="footer-copy">© 2026</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
